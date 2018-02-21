@@ -1,0 +1,23 @@
+{
+  "name": "audiobookmarklet",
+  "version": "0.0.1",
+  "description": "Record audio annotation from the browser",
+  "main": "index.js",
+  "dependencies": {
+    "webpack": "^3.8.1"
+  },
+  "devDependencies": {
+    "css-loader": "^0.28.7",
+    "handlebars": "^4.0.11",
+    "handlebars-loader": "^1.6.0",
+    "style-loader": "^0.19.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack && bookmarkletify dist/index.js -o dist/bookmarklet.js && cat dist/bookmarklet.js | xclip -selection clipboard",
+    "bookmarklet": "bookmarklet dist/index.js dist/bookmarklet.js"
+  },
+  "keywords": [ "audio", "annotation", "tag" ],
+  "author": "arun kumar<arunkakorp@gmail.com>",
+  "license": "ISC"
+}

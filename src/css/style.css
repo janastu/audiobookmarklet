@@ -1,0 +1,31 @@
+#abmbookmarklet {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    z-index: 2147483647; /* largest number possible to ensure its on top of everything */
+    background: white;
+}
+
+#abmloginwindow {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    margin-left: 25%;
+    margin-top: 10%;
+    width: 30%;
+    height: 240px;
+    background: white;
+}
+
+#abmloginbutton {
+    background: white;
+    color: black;
+}
+
+.hidden {
+    display: none!important;
+}
+
+.bar {
+    background: solid white;
+}
